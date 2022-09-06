@@ -18,9 +18,12 @@ keypoints:
 - "Pilon is used to polsih an assembly with short reads."
 ---
 
+
+
 In the [previous episode](https://cloud-span.github.io/metagenomics01-qc-assembly/03-assembly/index.html) we generated a draft assembly using Flye. While we could stop there, it is highly likely that our draft assembly contains errors such as gaps and misassemblies. If we generated an assembly using long read (which we just did), the base accuracy of the long reads is also lower, and so without polishing we are still likely to have single nucleotide polymorphisms (SNPs) remaining in the data. We can further improve the quality of this assembly using the raw data we have available in a process known as "assembly polishing".
 
-The cost of producing large quantities of sequence data has greatly decreased with the improvement in both the chemistry and algorithm development for processing sequence data. With short read *de novo* assemblies, although genomes with a high level of coverage could be produced, because of the length of short reads, assemblies using short reads alone remained very fragmented. This is because there are certain regions of a genome that are hard for short read sequences to assemble through. These are mainly sequence features that span greater than the length of a short read. Typically these contain repeat sequences. Long read assemblies allow the reads to span these difficult regions in these genomes. However with long read assemblies the error rate is higher so we introduce SNPs, and we have lower coverage. However one way in which we can both reduce the fragmentation of the genome and remove some of these SNPs, is through polishing. We covered this previously in our other course in the episode on [Platform choice](https://cloud-span.github.io/experimental_design01-principles/01-platform/index.html), and in the [introduction section of this course](https://cloud-span.github.io/metagenomics01-qc-assembly/00-introduction-meta/index.html). 
+
+Long read assemblies have reads that are able to span difficult regions in genomes, that short read assemblies could not. This is helpful particularly for genomes with large repeats. However with long read assemblies the error rate is higher so we introduce SNPs, and we have lower coverage. One way in which we can both reduce the fragmentation of the genome and remove some of these SNPs, is through polishing. We covered this previously in our other course in the episode on [Platform choice](https://cloud-span.github.io/experimental_design01-principles/01-platform/index.html), and in the [introduction section of this course](https://cloud-span.github.io/metagenomics01-qc-assembly/00-introduction-meta/index.html).
 
 ## Why bother polishing?
 
