@@ -14,7 +14,7 @@ keypoints:
 - Metagenomes contain multiple organisms within one sample unlike genomic samples.
 - In metagenomes the organisms present are not usually present in the same abundance - except for mock communities.
 - We can identify the organisms present in a sample using either amplicon sequencing or whole metagenome sequencing. Amplicon sequencing is cheaper and quicker, however it also limits the amount of downstream analysis that can be done with the data.
-- Metagenomes can diff in their levels of complexity and this is determined by how many organisms are in the metagenome.
+- Metagenomes can differ in their levels of complexity and this is determined by how many organisms are in the metagenome.
 - Difference platforms allow us to perform different analyses. The suitability depends on the question you are asking.
 
 ---
